@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biblioteca</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .menu { list-style: none; padding: 0; }
+        .menu li { margin: 10px 0; }
+        .menu a { text-decoration: none; color: #007bff; font-size: 18px; }
+        .menu a:hover { color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Biblioteca</h1>
+    <ul class="menu">
+        <li><a href="{% url 'lista_autores' %}">Ver Autores</a></li>
+        <li><a href="{% url 'agregar_autor' %}">Agregar Autor</a></li>
+        <li><a href="{% url 'lista_libros' %}">Ver Libros</a></li>
+        <li><a href="{% url 'agregar_libro' %}">Agregar Libro</a></li>
+        <li><a href="/admin/">Administración</a></li>
+    </ul>
+</body>
+</html>

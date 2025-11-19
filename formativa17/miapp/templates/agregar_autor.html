@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Autor</title>
+</head>
+<body>
+    <h1>Agregar Nuevo Autor</h1>
+    <a href="{% url 'lista_autores' %}">Volver a Autores</a> |
+    <a href="{% url 'home' %}">Inicio</a>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar Autor</button>
+    </form>
+</body>
+</html>
